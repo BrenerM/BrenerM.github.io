@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" type="text/css" href="css/formatacoes.css">
+
+    <title>Página de Brener e Adson</title>
+    <link rel="icon" href="imagens/minhalogo.png">
+    <script type="text/javascript">
+        function validar_form_contato() {
+            var nome = formContato.nome.value;
+            var email = formContato.email.value;
+            var assunto = formContato.assunto.value;
+            var mensagem = formContato.mensagem.value;
+
+            if (nome == "") {
+                alert("Campo nome é obrigatório");
+                formContato.nome.focus();
+                return false;
+
+            }
+
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <!-- inicio Cabecalho -->
+        <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente">
+            <div class="container">
+
+                <a href="index.html" class="navbar-brand">
+                    <img src="imagens/unitins1.png" width="90">
+                </a>
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+            
+          </button>
+
+                <div class="collapse navbar-collapse" id="nav-principal">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Quem Somos.html" class="nav-link">Quem Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Contato.html" class="nav-link">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <!--/fim Cabecalho -->
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+    <div class="texto-capa">
+        <h1>Formulário de Contato</h1>
+    </div>
+
+    <section id="homeQS" class="d-flex">
+        <!--home -->
+        <div class="container align-self-center">
+            <!--container -->
+            <div class="row">
+                <!--row -->
+                <div class="col-md-12">
+
+                </div>
+                <!--/row -->
+            </div>
+            <!--/container -->
+    </section>
+    <section id="dados" class="caixa">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <form name="formContato" method="post">
+                        <h3><strong>Dados Pessoais:</strong></h3>
+
+                        <label>Nome:</label>
+                        <input id="nome" name="nome" placeholder="Nome completo"><br/>
+
+                        <label>E-mail:</label>
+                        <input id="e-mail" name="e-mail" placeholder="E-mail"> <br/>
+
+                        <label>Idade:</label>
+                        <select name="Idade"> <br/><br/>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                            <option value="32">32</option>
+                            <option value="33">33</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                            <option value="41">41</option>
+                            <option value="42">42</option>
+                            <option value="43">43</option>
+                            <option value="44">44</option>
+                            <option value="45">45</option>
+                            <option value="46">46</option>
+                            <option value="47">47</option>
+                            <option value="48">48</option>
+                            <option value="49">49</option>
+                            <option value="50">50</option>
+                            
+                           </select> <br/>
+
+                        <label>Sexo:</label>
+                        <input type="radio" name="Sexo" value="Masculino">Masculino</label>
+                        <input type="radio" name="Sexo" value="Feminino">Feminino</label><br/>
+
+
+                        <label>Estado:</label>
+                        <select>
+                            <option>PA</option>
+                            <option>MA</option>
+                            <option>TO</option>
+
+                        </select>
+                        <label for="Cidade">Cidade:</label>
+                        <select>
+                            <option>Palmas</option>
+                            <option>Imperatriz</option>
+                            <option>São Luiz</option>
+                            <option>Belém</option>
+                            <option>Parauapebas</option>
+                            
+                        </select>
+                        </fieldset>
+                        <fieldset>
+                            <strong><label>Informações:</label></strong><br/>
+                            <label for="Motivo do Contato">Motivo do Contato:</label>
+                            <select>
+                                <option>Quero fazer parte</option>
+                                <option>Elogio</option>
+                                <option>Outro</option>
+                            </select>
+                            <br/>
+
+                            <textarea name="msg" id="Mensagem" cols="30" rows="5"></textarea>
+                            <br>
+                            <button type="Submit" value="Enviar" onclick="return validar_form_contato()" class="btn btn-lg btn-custom btn-preto">
+                                Enviar
+                           </a>
+                           
+                        </fieldset>
+                    </form>
+
+
+                </div>
+                <div class="col-md-6">
+                    <h3>Estude conosco: </h3>
+                    <p> Um grupo de estudos é um ótimo meio para driblar a procrastinação e o tédio de e studar sozinho. A iniciativa de reunir os colegas de sala para dar um reforço no a prendizado em horários extras é uma maneira mais dinâmica de ficar
+                        em dia com o conteúdo das aulas.</p>
+
+                    <p>Além disso, o grupo de estudos é o canal ideal para compartilhar dúvidas, opiniões e debater os temas vistos em sala. Toda essa troca permite maior absorção e compreensão dos conteúdos. Outro ponto positivo de formar uma turma para
+                        estudar fora do contexto acadêmico é a motivação, ou seja, o compromisso assumido com outras pessoas é um incentivo a mais para manter a disciplina. Ao lado esquerdo estão algumas tecnologias que estudaram juntos. Onde compartilharam
+                        suas duvidas e conhecimentos e assim foi possível a realização deste trabalho </p>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="imagens/unitins1.png" width="142">
+                </div>
+                <div class="col-md-3">
+
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <p>Desenvolvido por Adson e Brener na disciplina de Desenvolvimento Front-End – 08/06/2022</p>
+                </div>
+                <div class="col-md-3">
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
